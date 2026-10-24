@@ -1,25 +1,80 @@
 aid: 10percenthappier-com
+
 name: 10percenthappier
-description: '10percenthappier is a company surfaced via the API Evangelist harvest backlog (source: vc-portfolio;
-  backed by techstars) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/6611724b5b44cc23c5935b60/66d9ef0f4554888d0a7e12c1_70d8e5dd9ea09d3b2919c0978fcc268a_OG1.webp
+
+description: "10percenthappier is a mindfulness and meditation platform offering personalized meditation experiences. The company provides a subscription-based app that adapts to users' needs, offering courses, guided meditations, and tools for mental well-being. Backed by Techstars, it focuses on integrating mindfulness into daily life through a flexible, user‑centric approach."
+
 url: https://raw.githubusercontent.com/api-evangelist/10percenthappier-com/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:vc-portfolio
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-10-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-10-24'
+
 modified: '2026-10-24'
+
 tags:
 - Company
-apis: []
+- Mindfulness
+- Meditation
+- HealthTech
+- Subscription
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
-x-backed-by:
-- techstars
+
 common:
+- type: Hosts
+  url: hosts/10percenthappier-com-hosts.yml
+- type: Vendors
+  url: vendors/10percenthappier-com-vendors.yml
+- type: TermsOfService
+  url: https://www.meditatehappier.com/terms-of-service
+- type: Support
+  url: https://support.meditatehappier.com/
+- type: SignUp
+  url: https://my.meditatehappier.com/redeem/register
+- type: PrivacyPolicy
+  url: https://www.meditatehappier.com/privacy-policy
+- type: Newsroom
+  url: https://www.meditatehappier.com/ua-lander-cms/media
+- type: GettingStarted
+  url: https://www.meditatehappier.com/support/support-category/getting-started
+- type: DomainSecurity
+  url: security/10percenthappier-com-domain-security.yml
 - type: Website
   url: https://10percenthappier.com/
+
+apis: []
+
+x-backed-by:
+- techstars
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-10-24'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://10percenthappier.com/
+    status: 200
+x-enrichment:
+  date: '2026-10-24'
+  status: enriched
+  artifacts_added: 7
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local

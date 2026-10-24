@@ -1,0 +1,7 @@
+deployment:
+  mode: none
+  auth: none
+  verified: derived
+generated: "2026-10-24"
+method: derived
+source: "No MCP server documented; derived candidate with mode none."

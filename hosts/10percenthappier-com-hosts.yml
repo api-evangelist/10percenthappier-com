@@ -1,0 +1,87 @@
+generated: '2026-10-24'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 6
+  own: 2
+  other_domain: 4
+  platform: 0
+  roles:
+  - api
+  - docs
+  - identity
+  - support
+  - website
+hosts:
+- host: 10percenthappier.com
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  - vendor-detect
+  types:
+  - Website
+  serves:
+  - cdn
+  vendor: cloudflare
+  registrable_domain: 10percenthappier.com
+  role: website
+  relation: own
+- host: api.10percenthappier.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: 10percenthappier.com
+  role: api
+  relation: own
+- host: api.meditatehappier.com
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: meditatehappier.com
+  role: api
+  relation: other-domain
+- host: my.meditatehappier.com
+  found_by:
+  - pointer
+  types:
+  - SignUp
+  serves: []
+  registrable_domain: meditatehappier.com
+  role: identity
+  relation: other-domain
+- host: support.meditatehappier.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types:
+  - Support
+  serves: []
+  registrable_domain: meditatehappier.com
+  role: support
+  relation: other-domain
+- host: www.meditatehappier.com
+  found_by:
+  - pointer
+  - probed
+  - site-links
+  - docs-index
+  - contract-discovery
+  - well-known
+  types:
+  - TermsOfService
+  - PrivacyPolicy
+  - Newsroom
+  - GettingStarted
+  serves:
+  - docs
+  registrable_domain: meditatehappier.com
+  role: docs
+  relation: other-domain
